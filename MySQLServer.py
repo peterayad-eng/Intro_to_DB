@@ -10,7 +10,7 @@ try:
     if mydb.is_connected():
         mycursor = mydb.cursor()
 
-    create_db = "CREATE DATABASE alx_book_store"
+    create_db = "CREATE DATABASE IF NOT EXISTS alx_book_store"
 
     mycursor.execute(create_db)
 
